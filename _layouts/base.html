@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr-CH" dir="ltr">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    {% if jekyll.environment == "production" %}
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91148813-9"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -10,65 +10,15 @@
 
       gtag('config', 'UA-91148813-9');
     </script>
+    {% endif %}
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stonecase - Flightcase manufacture</title>
-    <meta name="description" content="Création de flightcase et de caisses de transport sur mesure pour transporter vos objets délicats en toute sécurité.">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="theme-color" content="#000">
 
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand mx-auto mr-0" href="/">
-          <img src="/static/stonecase-logo.svg" class="w-100" alt="Logo de stonecase" height="50">
-        </a>
-        </div>
-      </div>
-    </nav>
-
-    <div style="height: 50vh; width: 100%; background-image: url('/static/products/flightcase1.jpg'); background-position: center; background-size: cover;"></div>
-
-    <div class="container">
-      {{ content }}
-
-      <footer class="border-top py-5 mt-5">
-        <div class="row">
-          <div class="col-12 col-md">
-            <b>Stonecase Sàrl</b>
-            <p>
-              Cité Vieusseux 9
-              <br>
-              CH-1203 Genève
-            </p>
-          </div>
-          <div class="col-12 col-md">
-            <p>
-              <b>Till Girardier</b>
-              <br>
-              <a href="tel:‭+41788986008">‭+41 78 898 60 08</a>
-              <br>
-              <a href="mailto:info@stonecase.ch">info@stonecase.ch</a>
-            </p>
-          </div>
-          <div class="col-12 col-md">
-            <p>
-              <b>Horaires:</b>
-              <br>
-              <i>Ouverture sur rendez-vous</i>
-            </p>
-          </div>
-        </div>
-      </footer>
-    </div>
+    {{ content }}
   </body>
 </html>
