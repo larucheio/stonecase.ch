@@ -3,36 +3,68 @@ layout: base
 ---
 
 <main class="container">
-  <section>
+  <section class="section">
     <h1>Protéger ce qu’on aime, c’est être plus serein à chaque déplacement</h1>
     <p>Le flightcase est une caisse robuste et réutilisable qui s’adapte à de nombreuses situations&#8239;: il permet de stocker ou de transporter par avion, camion ou bateau, tout type d’objets fragiles et de grande valeur de façon sécurisée. Les instruments de musique, trophées destinés aux évènements sportifs, œuvres d’art pour des expositions mobiles et les biens de luxe comme les montres et des bijoux sont ainsi protégés durablement. Le flightcase est également conçu pour transporter, conserver ou installer du matériel informatique et technique, notamment dans le domaine de l’évènementiel.</p>
+
+    <!-- Slider main container -->
+    <div class="swiper-container inner-section">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" style="background-image: url('/img/slider/touring.jpg'); background-size: cover; background-position: center;">
+              <h1 class="text-white text-center p-4" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(90,90,90, 0.75)">Touring</h1>
+            </div>
+            <div class="swiper-slide" style="background-image: url('/img/slider/instruments-de-musique.jpg'); background-size: cover; background-position: center;">
+              <h1 class="text-white text-center p-4" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(90,90,90, 0.75)">Instruments de musique</h1>
+            </div>
+            <div class="swiper-slide" style="background-image: url('/img/slider/installation-fixe.jpg'); background-size: cover; background-position: center;">
+              <h1 class="text-white text-center p-4" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(90,90,90, 0.75)">Installation fixe</h1>
+            </div>
+            <div class="swiper-slide" style="background-image: url('/img/slider/velo-cargo.jpg'); background-size: cover; background-position: center;">
+              <h1 class="text-white text-center p-4" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(90,90,90, 0.75)">Vélo cargo</h1>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
   </section>
 
-  <section>
+  <section class="section">
     <h1>Fabrication sur mesure</h1>
-    <p>
+    <p class="inner-section">
       <b>Adapté à vos besoins</b>
       <br>
       Tous nos flightcases sont conçus sur mesure, selon les besoins spécifiques de chaque situation. Chez Stonecase, nous nous chargeons de trouver la solution optimale pour votre projet. Choisir le sur-mesure, c’est s’adapter parfaitement au matériel transporté, et gagner du temps à chaque utilisation. Une sécurité maximale pour un transport en toute confiance.
     </p>
-    <p>
+    <p class="inner-section">
       <b>Conseils et service de qualité</b>
       <br>
       Concevoir des flightcases sur mesure requiert une connaissance approfondie de la logistique de transport et de stockage, ainsi qu’une ouverture d’esprit sans limites&#8239;: faire preuve de créativité pour répondre à vos besoins est une de nos principales préoccupations. Chez Stonecase, nous mettons aussi une priorité sur la communication avec le client et nous nous tenons à votre entière disposition.
     </p>
-    <p>
+    <p class="inner-section">
       <b>Conçu et fabriqué à Genève</b>
       <br>
       Installé au centre de Genève, Stonecase met un point d’honneur à respecter la tradition locale de «&#8239;qualité suisse&#8239;» en réalisant des flightcases d’exception. Outre soutenir l’artisanat local, en faisant appel à Stonecase, vous vous assurez une rapidité d’exécution sans pareil et des délais respectés, ainsi qu’un service après-vente proche de chez vous et de qualité.
     </p>
+
+    <img src="/img/fabrication-sur-mesure.svg" class="img-fluid inner-section" alt="">
   </section>
 
-  <section>
+  <section class="section">
     <h1>Réalisons votre projet&#8239;!</h1>
     <p>Chez Stonecase, nous sommes là pour vous, chez vous ou dans notre atelier, de la conception de votre projet à sa livraison. Votre entière satisfaction est notre principale préoccupation. Nos devis sont gratuits, n’hésitez pas à nous contacter&#8239;!</p>
+    <div class="inner-section" style="position: relative; background-color: #777; background-image: url('/img/realisons-votre-projet.jpg'); background-size: cover; background-position: center; height: 500px; background-blend-mode: multiply;">
+      <a class="text-white h1 p-4" href="#contact" style="position: absolute; top: 50%; left: 50%;transform:translate(-50%,-50%); background-color: rgba(150, 150, 150, 0.5);">Demandez un devis gratuit</a>
+    </div>
   </section>
 
-  <section>
+  <section class="section">
     <h1>Ils nous font confiance</h1>
 
     <blockquote>
@@ -40,7 +72,7 @@ layout: base
       <cite>— Marc Sapin, Superviseur & coordinateur technique à L’OSR</cite>
     </blockquote>
 
-    <ul>
+    <ul class="clients-list inner-section">
       <li>ACTING LINE STUDIO</li>
       <li>AGEDA COMMUNICATION</li>
       <li>ALDER + EISENHUT</li>
@@ -100,8 +132,14 @@ layout: base
     </ul>
   </section>
 
-  <section>
+  <section class="section">
     <h1>Coup d’&oelig;il sur l’entreprise</h1>
     <p>Stonecase Sàrl est dirigée par Till Girardier. Menuisier de formation, il découvre le monde du flightcase en travaillant comme technicien dans l’évènementiel, faisant notamment face aux problématiques de manutention d’objets techniques fragiles. Il est formé à la conception de caisses de transport chez Zap SA par René Von&nbsp;Arx, héritant ainsi de plus de trente ans d’expérience dans le domaine. En 2018, Till Girardier reprend la manufacture de flightcases sous l’appellation Stonecase. Il s’installe dans un atelier plus grand et modernise le parc de machines, redynamisant ainsi la production de flightcases sur mesure dans le canton de Genève.</p>
+    <div class="inner-section" style="background-image: url('/img/cote-entreprise.jpeg'); background-size: cover; background-position: center; height: 500px;"></div>
+    <p style="margin-top: 50px;">
+      <b>Till Girardier</b>
+      <br>
+      <i>Fondateur de Stonecase</i>
+    </p>
   </section>
 </main>

@@ -16,18 +16,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stonecase - Flightcase manufacture</title>
 
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="/css/main.css">
+
+    <script src="/js/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <header class="container">
-      <h1>Stonecase</h1>
+    <header style="background-color: #777; background-image: url('/img/hero.jpg'); background-blend-mode: multiply; background-size: cover; background-position: center; height: 90vh;">
+      <div class="container-fluid" style="padding: 1rem 2rem; position: absolute; top: 0; width: 100%">
+        <div class="row">
+          <div class="col text-white">
+            <b>Cité Vieusseux 9 / CH-1203 Genève</b>
+          </div>
+          <div class="col text-center">
+            <a href="tel:+41788986008" class="font-weight-bold text-white">+41 78 898 60 08</a>
+          </div>
+          <div class="col text-right">
+            <a href="mailto:info@stonecase.ch" class="font-weight-bold text-white">info@stonecase.ch</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center" style="position: relative; top: calc(90vh / 2); left: 50%; transform: translate(-50%, -50%);">
+        <img src="/img/stonecase-logo.svg" alt="" class="img-fluid p-5" style="max-width: 950px; width: 100%;">
+        <div style="margin-top: 100px;">
+          <a class="text-white h1 p-4" href="#contact" style="background-color: rgba(150, 150, 150, 0.5);">Demandez un devis gratuit</a>
+        </div>
+      </div>
     </header>
 
     {{ content }}
 
-    <footer class="container">
+    <footer id="contact" class="container section">
       <h1>Contact</h1>
       <p>Nous nous réjouissons de vous accueillir dans nos locaux sur rendez-vous afin de discuter de votre projet. Sur demande, nous pouvons également nous déplacer chez vous.</p>
+      <div class="row inner-section">
+        <div class="col-12 col-md">
+          <b>Stonecase Sàrl</b>
+          <br>
+          Cité Vieusseux 9
+          <br>
+          CH-1203 Genève
+        </div>
+        <div class="col-12 col-md">
+          <b>Till Girardier</b>
+          <br>
+          <a href="tel:+41788986008">+41 78 898 60 08</a>
+          <br>
+          <a href="mailto:info@stonecase.ch">info@stonecase.ch</a>
+        </div>
+        <div class="col-12 col-md">
+          <b>Horaires</b>
+          <br>
+          Ouverture sur rendez-vous
+        </div>
+      </div>
     </footer>
+
+    <div class="" style="margin-top: 200px; background-color: black; color: white; height: 500px;">
+      MAP
+    </div>
+
+    <script src="/js/main.js"></script>
   </body>
 </html>

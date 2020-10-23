@@ -2,4 +2,73 @@
 ---
 
 @import "variables";
-@import "bootstrap/bootstrap";
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/variables";
+@import "bootstrap/reboot";
+@import "bootstrap/grid";
+@import "bootstrap/utilities";
+@import "bootstrap/type";
+@import "bootstrap/images";
+
+.swiper-container {
+  width: 100%;
+  height: 700px;
+}
+
+.clients-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.section {
+  margin-top: 100px;
+}
+
+.inner-section {
+  margin-top: 25px;
+}
+
+.section h1 {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 800px) {
+  .clients-list {
+    columns: 2;
+    column-gap: 100px;
+  }
+
+  .section {
+    margin-top: 200px;
+  }
+
+  .inner-section {
+    margin-top: 50px;
+  }
+
+  .section h1 {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients-list {
+    columns: 3;
+    column-gap: 100px;
+  }
+
+  .section {
+    margin-top: 400px;
+  }
+
+  .inner-section {
+    margin-top: 100px;
+  }
+
+  .section h1 {
+    margin-bottom: 100px;
+  }
+}

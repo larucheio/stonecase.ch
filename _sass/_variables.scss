@@ -1,6 +1,3 @@
-// TODO To replace with correct font-size for body & headings
-$enable-responsive-font-sizes: true;
-
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-base: 'URW DIN', $font-family-sans-serif;
 $headings-font-family: 'URW DIN SemiCond', $font-family-base;
@@ -8,3 +5,27 @@ $headings-font-family: 'URW DIN SemiCond', $font-family-base;
 $container-max-widths: (
   xl: 1420px
 );
+
+h1 {
+  font-size: 1.953rem !important;
+}
+
+@media (min-width: 800px) {
+  body {
+    font-size: 1.563rem !important;
+  }
+
+  h1 {
+    font-size: 3.052rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 1.953rem !important;
+  }
+
+  h1 {
+    font-size: 3.815rem !important;
+  }
+}
