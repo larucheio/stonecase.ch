@@ -13,6 +13,45 @@
 @import "bootstrap/type";
 @import "bootstrap/images";
 
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide--1 {
+  background-image: url('/img/slider/touring.jpg');
+}
+
+.swiper-slide--2 {
+  background-image: url('/img/slider/instruments-de-musique.jpg');
+}
+
+.swiper-slide--3 {
+  background-image: url('/img/slider/installation-fixe.jpg');
+}
+
+.swiper-slide--4 {
+  background-image: url('/img/slider/velo-cargo.jpg');
+}
+
+.hero {
+  background-color: #777;
+  background-image: url('/img/hero.jpg');
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.realisons {
+  position: relative; background-color: #777;
+  background-image: url('/img/realisons-votre-projet.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  background-blend-mode: multiply;
+}
+
 .swiper-container {
   width: 100%;
   height: 700px;
@@ -36,6 +75,30 @@
 }
 
 @media (min-width: 800px) {
+  .hero {
+    background-image: url('/img/hero-800.jpg');
+  }
+
+  .realisons {
+    background-image: url('/img/realisons-votre-projet-800.jpg');
+  }
+
+  .swiper-slide--1 {
+    background-image: url('/img/slider/touring-800.jpg');
+  }
+
+  .swiper-slide--2 {
+    background-image: url('/img/slider/instruments-de-musique-800.jpg');
+  }
+
+  .swiper-slide--3 {
+    background-image: url('/img/slider/installation-fixe-800.jpg');
+  }
+
+  .swiper-slide--4 {
+    background-image: url('/img/slider/velo-cargo-800.jpg');
+  }
+
   .clients-list {
     columns: 2;
     column-gap: 100px;
@@ -55,6 +118,30 @@
 }
 
 @media (min-width: 1200px) {
+  .hero {
+    background-image: url('/img/hero-1200.jpg');
+  }
+
+  .realisons {
+    background-image: url('/img/realisons-votre-projet-1200.jpg');
+  }
+
+  .swiper-slide--1 {
+    background-image: url('/img/slider/touring-1200.jpg');
+  }
+
+  .swiper-slide--2 {
+    background-image: url('/img/slider/instruments-de-musique-1200.jpg');
+  }
+
+  .swiper-slide--3 {
+    background-image: url('/img/slider/installation-fixe-1200.jpg');
+  }
+
+  .swiper-slide--4 {
+    background-image: url('/img/slider/velo-cargo-1200.jpg');
+  }
+
   .clients-list {
     columns: 3;
     column-gap: 100px;
