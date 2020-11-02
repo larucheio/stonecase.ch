@@ -13,6 +13,16 @@
 @import "bootstrap/type";
 @import "bootstrap/images";
 
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+}
+
+.swiper-pagination-bullet-active {
+  background: white;
+}
+
 .swiper-slide {
   background-size: cover;
   background-position: center;
