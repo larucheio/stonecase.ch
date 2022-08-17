@@ -1,18 +1,35 @@
 ---
 ---
 
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "bootstrap/functions";
+
+// 2. Include any default variable overrides here
 @import "variables";
 
-@import "bootstrap/functions";
+// 3. Include remainder of required Bootstrap stylesheets
 @import "bootstrap/variables";
-@import "bootstrap/mixins";
-@import "bootstrap/variables";
-@import "bootstrap/reboot";
-@import "bootstrap/grid";
-@import "bootstrap/utilities";
-@import "bootstrap/type";
-@import "bootstrap/images";
 
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "bootstrap/maps";
+@import "bootstrap/mixins";
+@import "bootstrap/root";
+
+// 6. Optionally include any other parts as needed
+@import "bootstrap/utilities";
+@import "bootstrap/reboot";
+
+@import "bootstrap/containers";
+@import "bootstrap/images";
+@import "bootstrap/grid";
+@import "bootstrap/type";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "bootstrap/utilities/api";
+
+// 8. Add additional custom code here
 
 .swiper-button-prev,
 .swiper-button-next {
