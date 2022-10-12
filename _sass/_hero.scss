@@ -1,0 +1,76 @@
+.hero {
+  position: relative;
+  background-color: #777;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 50vh;
+}
+
+.hero--homepage {
+  background-image: url('/img/stonecase.jpg');
+}
+
+.hero--flightcases {
+  background-image: url('/img/hero.jpg');
+}
+
+.hero--menuiserie {
+  background-image: url('/img/menuiserie.jpg');
+}
+
+.hero--stonecase {
+  background-image: url('/img/stonecase/stonecase.jpg');
+}
+
+.hero__title {
+  @extend .text-center;
+  @extend .text-white;
+  position: relative;
+  top: calc(50vh / 2);
+}
+
+@media (min-width: 800px) {
+  .hero {
+    height: 100vh;
+  }
+
+  .hero--homepage {
+    background-image: url('/img/stonecase.jpg');
+  }
+
+  .hero--flightcases {
+    background-image: url('/img/hero-800.jpg');
+  }
+
+  .hero--menuiserie {
+    background-image: url('/img/menuiserie.jpg');
+  }
+
+  .hero--stonecase {
+    background-image: url('/img/stonecase/stonecase.jpg');
+  }
+
+  .hero__title {
+    top: calc(100vh / 2);
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero--homepage {
+    background-image: url('/img/stonecase.jpg');
+  }
+
+  .hero--flightcases {
+    background-image: url('/img/hero-1200.jpg');
+  }
+
+  .hero--menuiserie {
+    background-image: url('/img/menuiserie.jpg');
+  }
+
+  .hero--stonecase {
+    background-image: url('/img/stonecase/stonecase.jpg');
+  }
+}

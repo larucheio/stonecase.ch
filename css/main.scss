@@ -7,6 +7,8 @@
 // 2. Include any default variable overrides here
 @import "variables";
 
+// @import "bootstrap/bootstrap";
+
 // 3. Include remainder of required Bootstrap stylesheets
 @import "bootstrap/variables";
 
@@ -21,15 +23,41 @@
 @import "bootstrap/utilities";
 @import "bootstrap/reboot";
 
+@import "bootstrap/buttons";
+@import "bootstrap/close";
 @import "bootstrap/containers";
 @import "bootstrap/images";
 @import "bootstrap/grid";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/offcanvas";
 @import "bootstrap/type";
+
+@import "bootstrap/helpers";
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "bootstrap/utilities/api";
 
 // 8. Add additional custom code here
+
+@import "hero";
+
+.swissflag {
+  height: 1.424rem;
+}
+
+@media (min-width: 800px) {
+  .swissflag {
+    height: 1.602rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .swissflag {
+    height: 1.802rem;
+  }
+}
+
 
 .swiper-button-prev,
 .swiper-button-next {
@@ -69,21 +97,31 @@
   background-image: url('/img/slider/installation-fixe.jpg');
 }
 
-.hero {
-  position: relative;
-  background-color: #777;
-  background-image: url('/img/hero.jpg');
-  background-blend-mode: multiply;
+.home__flightcase {
+  position: relative; background-color: #777;
+  background-image: url('/img/hero-1200.jpg');
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  height: 500px;
+  background-blend-mode: multiply;
 }
 
-.hero__logo {
-  position: relative;
-  top: calc(50vh / 2);
-  left: 50%;
-  transform: translate(-50%, -50%);
+.home__menuiserie {
+  position: relative; background-color: #777;
+  background-image: url('/img/menuiserie.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  background-blend-mode: multiply;
+}
+
+.home__about {
+  position: relative; background-color: #777;
+  background-image: url('/img/about.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  background-blend-mode: multiply;
 }
 
 .realisons {
@@ -106,6 +144,11 @@
   font-size: .7em;
 }
 
+.featurette {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 .section {
   margin-top: 50px;
 }
@@ -119,15 +162,6 @@
 }
 
 @media (min-width: 800px) {
-  .hero {
-    background-image: url('/img/hero-800.jpg');
-    height: 100vh;
-  }
-
-  .hero__logo {
-    top: calc(100vh / 2);
-  }
-
   .swiper-container {
     height: 700px;
   }
@@ -166,6 +200,12 @@
     column-gap: 100px;
   }
 
+
+  .featurette {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
   .section {
     margin-top: 100px;
   }
@@ -180,10 +220,6 @@
 }
 
 @media (min-width: 1200px) {
-  .hero {
-    background-image: url('/img/hero-1200.jpg');
-  }
-
   .realisons {
     background-image: url('/img/realisons-votre-projet-1200.jpg');
   }
@@ -215,6 +251,11 @@
   .clients-list {
     columns: 3;
     column-gap: 100px;
+  }
+
+  .featurette {
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 
   .section {
